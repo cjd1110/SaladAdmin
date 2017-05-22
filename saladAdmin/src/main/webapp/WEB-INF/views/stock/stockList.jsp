@@ -9,9 +9,7 @@
 <link rel="stylesheet" type="text/css" href="../css/stock.css"> 
 </head>
 <body>
-	<div class="container">
-		<jsp:include page="../inc/header.jsp" />
-		
+
 		<div class="stockList">
 			
 			<form action="" method="post">
@@ -64,8 +62,6 @@
 			
 			
 		</div><!-- memberList -->
-		
-		<jsp:include page="../inc/footer.jsp" />
-	</div>
+
 </body>
 </html>

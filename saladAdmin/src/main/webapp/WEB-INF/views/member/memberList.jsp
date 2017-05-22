@@ -9,8 +9,6 @@
 <link rel="stylesheet" type="text/css" href="../css/member.css"> 
 </head>
 <body>
-	<div class="container">
-		<jsp:include page="../inc/header.jsp" />
 		
 		<div class="memberList">
 			
@@ -64,7 +62,6 @@
 			
 		</div><!-- memberList -->
 		
-		<jsp:include page="../inc/footer.jsp" />
-	</div>
+
 </body>
 </html>

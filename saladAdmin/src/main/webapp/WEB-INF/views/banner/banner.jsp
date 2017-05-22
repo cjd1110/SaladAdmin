@@ -10,9 +10,6 @@
 </head>
 <body>
 
-<div class="container">
-		<jsp:include page="../inc/header.jsp" />
-		
 		<div class="banner">
 			
 			<div class="banner_box">
@@ -52,10 +49,6 @@
 			</div><!-- 팝업 관리 -->
 			
 		</div>
-		
-		<jsp:include page="../inc/footer.jsp" />
-</div>		
-		
 
 </body>
 </html>

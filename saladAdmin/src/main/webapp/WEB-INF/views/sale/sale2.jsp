@@ -10,9 +10,6 @@
 </head>
 <body>
 
-<div class="container">
-		<jsp:include page="../inc/header.jsp" />
-		
 		<div class="delivery">
 			
 			<div>
@@ -49,10 +46,6 @@
 			</div>
 		
 		</div>
-		
-		<jsp:include page="../inc/footer.jsp" />
-</div>		
-		
 
 </body>
 </html>

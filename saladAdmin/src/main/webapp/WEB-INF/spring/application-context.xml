@@ -16,7 +16,7 @@ http://www.springframework.org/schema/tx/spring-tx.xsd">
 <bean id="driverManagerDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
   		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
   		<property name="url" value="jdbc:oracle:thin:@localhost:1521:XE"></property>
-  		<property name="username" value="kingsmile"></property>
+  		<property name="username" value="dbgkrgus1"></property>
   		<property name="password" value="oracle"></property>
   </bean>
   

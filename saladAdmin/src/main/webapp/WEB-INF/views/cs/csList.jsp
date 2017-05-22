@@ -9,9 +9,6 @@
 <title> </title>
 </head>
 <body>
-
-<div class="container">
-		<jsp:include page="../inc/header.jsp" />
 		
 		<div class="cs">
 			
@@ -62,10 +59,6 @@
 			</div><!-- list -->
 		
 		</div>
-		
-		<jsp:include page="../inc/footer.jsp" />
-</div>		
-		
 
 </body>
 </html>

@@ -15,9 +15,7 @@
 
 </head>
 <body>
-	<div class="container">
-		<jsp:include page="../inc/header.jsp" />
-		
+
 		<div class="memberList">
 			
 		<div class="join_box">
@@ -109,7 +107,6 @@
 			
 		</div><!-- memberDetail -->
 		
-		<jsp:include page="../inc/footer.jsp" />
-	</div>
+	
 </body>
 </html>
