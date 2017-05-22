@@ -1,0 +1,45 @@
+.stockList{width:100%;
+				float:left;
+				}
+.stockmenu{width:100%;
+			   float:left;
+			   background:#eee;
+			   padding:5px 0;
+			   }	
+.stockmenu li{width:14%;
+				 float:left;
+				 text-align:center;}			   			
+.stock_topmenu{width:100%;
+					float:left;
+					text-align:center;
+					margin-bottom:30px;
+					}
+.stock_topmenu li{display:inline-block;}
+.stockList table{width:95%;
+					   margin:0 auto;
+					   }	
+.stockList table tr{width:100%;
+						  float:left;
+						  border-bottom:1px solid #eee;
+						  padding:10px 0;
+						  font-size:12px;
+						  }
+.stockList table tr th{text-align:center;float:left;}						  
+.stockList table tr th:nth-child(1){width:12.5%;}
+.stockList table tr th:nth-child(2){width:12.5%;}
+.stockList table tr th:nth-child(3){width:12.5%;}
+.stockList table tr th:nth-child(4){width:12.5%;}
+.stockList table tr th:nth-child(5){width:12.5%;}
+.stockList table tr th:nth-child(6){width:12.5%;}
+.stockList table tr th:nth-child(7){width:12.5%;}
+.stockList table tr th:nth-child(8){width:12.5%;}
+	
+.stockList table tr td{text-align:center; float:left;}		
+.stockList table tr td:nth-child(1){width:12.5%;}
+.stockList table tr td:nth-child(2){width:12.5%;}
+.stockList table tr td:nth-child(3){width:12.5%;}
+.stockList table tr td:nth-child(4){width:12.5%;}
+.stockList table tr td:nth-child(5){width:12.5%;}
+.stockList table tr td:nth-child(6){width:12.5%;}
+.stockList table tr td:nth-child(7){width:12.5%;}
+.stockList table tr td:nth-child(8){width:12.5%;}						  					   				

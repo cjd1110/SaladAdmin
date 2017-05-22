@@ -1,0 +1,33 @@
+.memberList{width:100%;
+				float:left;
+				}
+.memberList table{width:95%;
+					   margin:0 auto;
+					   }	
+.memberList table tr{width:100%;
+						  float:left;
+						  border-bottom:1px solid #eee;
+						  padding:10px 0;
+						  font-size:12px;
+						  }
+.memberList table tr th{text-align:center;float:left;}						  
+.memberList table tr th:nth-child(1){width:10%;}
+.memberList table tr th:nth-child(2){width:5%;}
+.memberList table tr th:nth-child(3){width:5%;}
+.memberList table tr th:nth-child(4){width:42%;}
+.memberList table tr th:nth-child(5){width:10%;}
+.memberList table tr th:nth-child(6){width:10%;}
+.memberList table tr th:nth-child(7){width:5%;}
+.memberList table tr th:nth-child(8){width:8%;}
+.memberList table tr th:nth-child(9){width:5%;}	
+	
+.memberList table tr td{text-align:center; float:left;}		
+.memberList table tr td:nth-child(1){width:10%;}
+.memberList table tr td:nth-child(2){width:5%;}
+.memberList table tr td:nth-child(3){width:5%;}
+.memberList table tr td:nth-child(4){width:42%;}
+.memberList table tr td:nth-child(5){width:10%;}
+.memberList table tr td:nth-child(6){width:10%;}
+.memberList table tr td:nth-child(7){width:5%;}
+.memberList table tr td:nth-child(8){width:8%;}
+.memberList table tr td:nth-child(9){width:5%;}						  					   				
