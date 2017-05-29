@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.kosta.admin.dao.delivery.DeliveryDAO">
+
+	<select id="selectAllOrder" resultType="com.kosta.admin.dto.delivery.PayOrderJoinDto">
+		select DISTINCT
+		o_ordernum, o_boxnum,o_boxquantity,o_step,o_orderstate,
+		p_depositor,p_bankname,p_way,p_amount
+		from s_order, pay
+		where
+		(s_order.o_ordernum = pay.p_ordernum) and o_orderstate='입금확인' order
+		by
+		o_step
+	</select>
+	
+	<update id="updateOrder">
+		update s_order set o_orderstate = '발송요청' where o_step in
+		<foreach item="item" index="index" collection="list" open="("
+			separator="," close=")">
+			#{item}
+		</foreach>
+	</update>
+
+	<select id="selectAllInfo" resultType="com.kosta.admin.dto.delivery.InformationDto">
+		select o_id as i_id, o_ordernum as i_ordernum, b_name as i_buyername,
+		b_addr as i_buyeraddr , b_tel as i_buyertel, o_pnumber as i_pnumber,
+		o_pname as i_pname, o_quantity as i_quantity, r_name as i_receivename ,
+		r_addr as i_receiveaddr, r_tel as i_receivetel ,o_boxquantity as i_boxquantity,
+		o_boxnum as i_boxnum,o_step as i_step from buyer,receiver, s_order 
+		where (receiver.r_ordernum = buyer.b_ordernum)
+		and (buyer.b_ordernum = s_order.o_ordernum) and o_orderstate = '발송요청'
+		order by o_date, r_ordernum
+	</select>
+
+	<insert id="insertInfo" parameterType="com.kosta.admin.dto.delivery.InformationDto">
+		insert into Information values(
+			#{i_id}, #{i_ordernum}, #{i_buyername},
+			#{i_buyeraddr}, #{i_buyertel}, #{i_pnumber}, #{i_pname},
+			#{i_quantity}, #{i_receivename}, #{i_receiveaddr},
+			#{i_receivetel},
+			#{i_boxquantity}, #{i_boxnum}, #{i_step})
+	</insert>
+
+	<delete id="deleteInfo">
+		delete from Information
+	</delete>
+
+</mapper>
+    

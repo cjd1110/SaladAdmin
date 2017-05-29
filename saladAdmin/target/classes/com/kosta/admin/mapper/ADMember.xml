@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.kosta.admin.dao.admember.ADMemberDAO">
+    <select id="idCheck" resultType="String">
+        select NVL(max(ad_id), 'id_false') from ad_member where ad_id = #{ad_id}
+    </select>
+    
+    <select id="pwdCheck" resultType="String">
+        select NVL(max(ad_pwd), 'pwd_false') from ad_member where ad_pwd = #{ad_pwd}
+    </select>
+</mapper>
+    
